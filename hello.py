@@ -26,12 +26,12 @@ mensagem = "Hello, Word!"
 if linguagem_atual == "pt_BR":
     mensagem = "Olá, Mundo!"
 elif linguagem_atual == "it_IT":
-    mensagem = "Ciao, Mondo!"    
+    mensagem = "Ciao, Mondo!"
 elif linguagem_atual == "es_SP":
-    mensagem = "Hola, Mundo!"  
+    mensagem = "Hola, Mundo!"
 elif linguagem_atual == "de_DE":
-    mensagem = "Hallo Welt!"  
+    mensagem = "Hallo Welt!"
 elif linguagem_atual == "fr_FR":
-    mensagem = "Bonjour le monde!"  
+    mensagem = "Bonjour le monde!"
 
 print(mensagem)

@@ -14,24 +14,21 @@ Execução:
     ou
     ./hello.py
 """
-__versao__ = "0.0.1"
+__versao__ = "0.1.3"
 __autor__ = "Thais Bueno"
 __licenca__ = "Unlicence"
 
 import os
 
-linguagem_atual = os.getenv("LANG","en_US")[:5]
-mensagem = "Hello, Word!"
+current_language = os.getenv("LANG","en_US")[:5]
 
-if linguagem_atual == "pt_BR":
-    mensagem = "Olá, Mundo!"
-elif linguagem_atual == "it_IT":
-    mensagem = "Ciao, Mondo!"
-elif linguagem_atual == "es_SP":
-    mensagem = "Hola, Mundo!"
-elif linguagem_atual == "de_DE":
-    mensagem = "Hallo Welt!"
-elif linguagem_atual == "fr_FR":
-    mensagem = "Bonjour le monde!"
+message = {
+    "en_US": "Hello, Word!",
+    "pt_BR": "Olá, Mundo!",
+    "it_IT": "Ciao, Mondo!",
+    "es_SP": "Hola, Mundo!",
+    "de_DE": "Hallo Welt!",
+    "fr_FR": "Bonjour le monde!"
+}
 
-print(mensagem)
+print(message[current_language])
